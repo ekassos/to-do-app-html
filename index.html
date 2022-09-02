@@ -1,29 +1,47 @@
 <!DOCTYPE html>
+
+<!-- Sets English as language and Left to Right as reading direction -->
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">  
+    <!-- Specifies the character encoding for the HTML document as UTF-8 -->
+    <meta charset="UTF-8">  
+    <!-- Specifies the title of the app -->
     <title>To-do App</title>
+    <!-- Specifies the CSS stylesheet file -->
     <link rel="stylesheet" href="main.css">
+    <!-- Sets the viewport. This gives the browser instructions on how to 
+    control the page's dimensions and scaling.
+    The width=device-width part sets the width of the page to follow the 
+    screen-width of the device (which will vary depending on the device).
+    The initial-scale=1.0 part sets the initial zoom level when the page is 
+    first loaded by the browser. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Iconscout Link For Icons -->
+    <!-- Uses Iconscout Link For Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
   <body>
+    <!-- Wrapper that includes the To-do main app box -->
     <div class="wrapper">
+      <!-- Wrapper that includes the To-do task box -->
       <div class="task-input">
-        <img src="bars-icon.svg" alt="icon">
-        <input type="text" placeholder="What are we tackling today?"><input type="submit">
+        <img src="check.svg" alt="icon"/>
+        <input type="text" placeholder="What are we tackling today?"><button>Submit</button>
       </div>
+      <!-- Wrapper that includes the To-do controls -->
       <div class="controls">
+        <!-- Wrapper that includes the To-do task filters -->
         <div class="filters">
           <span class="active" id="all">All</span>
           <span id="pending">Pending</span>
           <span id="completed">Completed</span>
         </div>
+        <!-- Button to clear all tasks -->
         <button class="clear-btn">Clear All</button>
       </div>
+      <!-- Task container -->
       <ul class="task-box"></ul>
     </div>
+    <!-- Specifies the JS file -->
     <script src="main.js"></script>
   </body>
 </html>
