@@ -17,8 +17,4 @@ The code for this project is adapted from CodingNepal's [Create A Todo List App 
 ## Improvements  
 1. A Submit button that works alongside the tutorial's functionality of pressing "Enter" to submit an item (added a second method to capture a wider range of how a user might choose to interact with the app).
 2. A strike-through line appears over a submitted task when the user hovers over the task's text to signify that clicking on the text will mark a task as completed and aid in functionality discovery.
-<<<<<<< HEAD
 3. An updated "Mark Task as Completed" function that updates the view instantly. In the tutorial's version, if a user crossed out a task in the "Pending" tab, they would need to navigate to another tab and return for the completed task to be removed from the list.
-=======
-3. An updated "Mark Task as Completed" function that updates the view instantly. In the tutorial's version, if a user crossed out a task in the "Pending" tab, they would need to navigate to another tab and return for the completed task to be removed from the list.
->>>>>>> f8d3f9a (Finalize App)
