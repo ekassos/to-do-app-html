@@ -1,7 +1,7 @@
 # To-do App with HTML, CSS, and JS
 
 ## Live Demo
-You can access a working version of the project [here](https://to-do-app-html.tiiny.site).
+You can access a working version of the project [here](https://to-do-app-html-i4c0wuvut-ekassos.vercel.app/).
 
 ## Code Source 
 The code for this project is adapted from CodingNepal's [Create A Todo List App in HTML CSS & JavaScript](https://www.codingnepalweb.com/create-todo-list-app-html-javascript/) tutorial, with a few additions as noted in the [Improvements section](#improvements) below.
