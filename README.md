@@ -1,5 +1,7 @@
 # To-do App with HTML, CSS, and JS
 
+$\textcolor{ForestGreen}{\textbf{\emph{Completed:}}} \text{\emph{ Friday, Sep 2, 2022}}$
+
 ## Live Demo
 You can access a working version of the project [here](https://to-do-app-html-i4c0wuvut-ekassos.vercel.app/).
 
