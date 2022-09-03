@@ -242,6 +242,7 @@ body{
 .settings :where(i, li){
   cursor: pointer;
 }
+
 /* Setting task box item settings menu properties */
 .settings .task-menu{
   z-index: 10;

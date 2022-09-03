@@ -49,6 +49,7 @@ function showTodo(filter) {
                                 <!-- Checkbox for marking as completed -->
                                 <input onclick='updateStatus(this, "${filter}")' type="checkbox" id="${id}" ${completed}>
                                 <!-- Text box and class for strike-through styling (completed or not) -->
+                                <!-- Improvement (5) -->
                                 <p class="${completed}">${todo.name}</p>
                             </label>
                             <!-- Settings menu -->
@@ -56,7 +57,8 @@ function showTodo(filter) {
                                 <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
                                 <ul class="task-menu">
                                     <!-- Edit button -->
-                                    <li onclick='editTask(${id}, "${todo.name}")'><i class="uil uil-pen"></i>Edit</li>
+                                    <!-- Improvement (5) -->
+                                    <li onclick='editTask(${id}, "${encodeURI(todo.name)}")'><i class="uil uil-pen"></i>Edit</li>
                                     <!-- Delete button -->
                                     <li onclick='deleteTask(${id}, "${filter}")'><i class="uil uil-trash"></i>Delete</li>
                                 </ul>
@@ -117,8 +119,8 @@ function updateStatus(selectedTask, filter) {
 function editTask(taskId, textName) {
     editId = taskId;
     isEditTask = true;
-    // Copies item to be edited to textbox
-    taskInput.value = textName;
+    // Copies item to be edited to textbox -- Improvement (5)
+    taskInput.value = decodeURI(textName);
     // Makes task input class active and moves cursor there
     taskInput.focus();
     taskInput.classList.add("active");
