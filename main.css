@@ -111,6 +111,17 @@ body{
   border-bottom: 1px solid #ccc;
 }
 
+/* Setting checkmark greyscale color when inactive */
+.task-input img.inactive{
+  filter: invert(76%) sepia(14%) saturate(35%) hue-rotate(314deg) brightness(105%) contrast(76%);
+}
+
+/* Setting checkmark greyscale color when active */
+.task-input img.active{
+  filter: invert(24%) sepia(0%) saturate(711%) hue-rotate(226deg) brightness(89%) contrast(82%);
+}
+
+/* Setting filter name properties */
 .filters span{
   margin: 0 8px;
   font-size: 17px;
@@ -118,15 +129,18 @@ body{
   cursor: pointer;
 }
 
+/* Setting first filter name properties */
 .filters span:first-child{
   margin-left: 0;
 }
 
+/* Setting active filter name properties */
 .filters span.active{
   color: #584cfd;
   font-weight: 800;
 }
 
+/* Setting inactive Clear All button properties */
 .controls .clear-btn{
   border: none;
   opacity: 0.5;
@@ -142,40 +156,48 @@ body{
   background: linear-gradient(135deg, #4150f6 0%, #160058 100%);
 }
 
+/* Setting active Clear All button properties */
 .clear-btn.active{
   opacity: 1;
   pointer-events: auto;
 }
 
+/* Setting active Clear All button properties */
 .clear-btn:active{
   transform: scale(0.93);
 }
 
+/* Setting task box margins */
 .task-box{
   margin-top: 20px;
   margin-right: 5px;
   padding: 0 20px 10px 25px;
 }
 
+/* Setting task box scrolling properties */
 .task-box.overflow{
   overflow-y: auto;
   max-height: 300px;
 }
 
+/* Setting task box scrollbar properties */
 .task-box::-webkit-scrollbar{
   width: 5px;
 }
 
+/* Setting task box scrollbar properties */
 .task-box::-webkit-scrollbar-track{
   background: #f1f1f1;
   border-radius: 25px;
 }
 
+/* Setting task box scrollbar properties */
 .task-box::-webkit-scrollbar-thumb{
   background: #e6e6e6;
   border-radius: 25px;
 }
 
+/* Setting task item properties */
 .task-box .task{
   list-style: none;
   font-size: 17px;
@@ -185,16 +207,19 @@ body{
   border-bottom: 1px solid #ccc;
 }
 
+/* Setting last task box item properties */
 .task-box .task:last-child{
   margin-bottom: 0;
   border-bottom: 0;
   padding-bottom: 0;
 }
 
+/* Setting last task box item properties */
 .task-box .task label{
   display: flex;
   align-items: flex-start;
 }
+/* Setting task box item properties */
 .task label input{
   margin-top: 7px;
   accent-color: #3C87FF;
@@ -204,6 +229,7 @@ body{
   margin-left: 12px;
   word-wrap: break-word;
 }
+/* Added strikethrough line over item name when hovering -- Improvement (2) */
 .task label p:hover {
     text-decoration: line-through;
 }
@@ -216,6 +242,7 @@ body{
 .settings :where(i, li){
   cursor: pointer;
 }
+/* Setting task box item settings menu properties */
 .settings .task-menu{
   z-index: 10;
   right: -5px;
@@ -257,6 +284,8 @@ body{
 .settings li i{
   padding-right: 8px;
 }
+
+/* Setting general margin properties */
 @media (max-width: 400px) {
   body{
     padding: 0 10px;
