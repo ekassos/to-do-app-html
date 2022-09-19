@@ -22,7 +22,7 @@ The code for this project is adapted from CodingNepal's [Create A Todo List App 
 - Done for the day or need a fresh start? Click "Clear All" to remove all (pending and completed) tasks.
 
 ## Improvements  
-> *These improvements are referenced throught the project files using the numbers shown below, e.g. Improvement (5).*
+> *These improvements are referenced throughout the project files using the numbers shown below, e.g. Improvement (5).*
 1. A Submit button that works alongside the tutorial's functionality of pressing "Enter" to submit an item (added a second method to capture a wider range of how a user might choose to interact with the app).
 2. A strike-through line appears over a submitted task when the user hovers over the task's text to signify that clicking on the text will mark a task as completed and aid in functionality discovery.
 3. An updated "Mark Task as Completed" function that updates the view instantly. In the tutorial's version, if a user crossed out a task in the "Pending" tab, they would need to navigate to another tab and return for the completed task to be removed from the list.
